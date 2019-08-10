@@ -46,6 +46,7 @@ LOCAL_ARM_MODE := arm
 程序运行时会依赖 asan.so，虽然新版本的系统都有提供， 但不一定和编译使用的版本一致。 所以需要把编译使用到的 asan.so 拷贝到项目中。 
 
 文件位于 ndk 中
+
 ![asan.so](./images/4.png)
 
 在项目的 app/ 目录 创建子目录 jniLibs/ 和 resources/ 
