@@ -8,12 +8,12 @@
 
 File > Project Structure > Android NDK location: 
 
-![ndk path](./images/2.png)
+![ndk path](./images/2.PNG)
 
 **注释 gradle 中 `NDK_TOOLCHAIN_VERSION` 配置**
 
 
-![NDK_TOOLCHAIN_VERSION](./images/3.png)
+![NDK_TOOLCHAIN_VERSION](./images/3.PNG)
 
 ## 步骤2: 配置 mk 文件
 
@@ -47,7 +47,7 @@ LOCAL_ARM_MODE := arm
 
 文件位于 ndk 中
 
-![asan.so](./images/4.png)
+![asan.so](./images/4.PNG)
 
 在项目的 app/ 目录 创建子目录 jniLibs/ 和 resources/ 
 
@@ -58,13 +58,13 @@ LOCAL_ARM_MODE := arm
 
 拷贝后结构如下
 
-![folders](./images/5.png)
+![folders](./images/5.PNG)
 
 
 
 **在 build.gradle 中增加 配置**
 
-![resources](./images/7.png)
+![resources](./images/7.PNG)
 
 > 这里配置的两个目录和前面新建的目录需要保持一致。 
 
@@ -85,7 +85,7 @@ PROP_APP_ABI=arm64-v8a
 
 生成的 apk 的目录结构可以参考下图。 (将生成的apk后缀改为 .zip 后解压。)
 
-![struct](./images/1.png)
+![struct](./images/1.PNG)
 
 **`wrap.sh` 和 `libclang_rt.asan-$arch-android.so` 应与其他 `so` 处于同一个目录**
 
@@ -95,6 +95,6 @@ PROP_APP_ABI=arm64-v8a
 
 参考 https://developer.android.com/ndk/guides/ndk-stack?hl=zh-CN
 
-![ndk-stack](./images/6.png)
+![ndk-stack](./images/6.PNG)
 
 
