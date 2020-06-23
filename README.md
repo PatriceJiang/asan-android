@@ -4,7 +4,9 @@
 
 > 由于 gcc4.9 使用 asan 时，链接 libcocos2djs.so 找不到部分符号， 且链接时间长。 需要改用 clang 编译。 
 
-**升级 android ndk 到 r14b**
+**升级 android ndk 到 r14b+**
+
+更高版本不需要升级
 
 File > Project Structure > Android NDK location: 
 
